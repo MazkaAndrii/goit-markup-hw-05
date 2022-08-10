@@ -5,18 +5,15 @@
   --font-weight: 700;
   --basetext-color: #757575;
 }
-
 .list {
   list-style: none;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px;
-
   display: flex;
   align-items: center;
   gap: 30px;
 }
-
 .link {
   text-decoration: none;
 }
@@ -32,27 +29,22 @@
   clip-path: inset(50%);
   margin: -1px;
 }
-
 .section {
   padding: 94px 0px;
 }
-
 .absec {
   padding-top: 0px;
 }
-
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
   background-color: var(--accent-color);
 }
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
 ul {
   margin: 0px;
   padding-left: 0px;
@@ -66,14 +58,12 @@ h5,
 h6 {
   margin: 0px;
 }
-
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
-
 /*----------------HEADER----------------*/
 .header .container {
   display: flex;
@@ -83,7 +73,6 @@ h6 {
   padding: 10px 0px 15px;
   border-bottom: 1px solid #ececec;
 }
-
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -115,12 +104,10 @@ h6 {
   letter-spacing: 0.02em;
   color: var(--basetext-color);
 }
-
 .nav-list-item:hover,
 .nav-list-item:focus {
   color: var(--header-color);
 }
-
 .header-tel,
 .mail {
   display: flex;
@@ -135,7 +122,6 @@ h6 {
 .header-tel:focus .contacts-icon {
   fill: currentColor;
 }
-
 .mail:hover,
 .mail:focus {
   color: var(--header-color);
@@ -144,7 +130,6 @@ h6 {
   margin-left: auto;
   column-gap: 50px;
 }
-
 .mail {
   margin: 9px auto;
 }
@@ -160,7 +145,6 @@ h6 {
 .mail:focus .contacts-icon {
   fill: currentColor;
 }
-
 /* -------------Hero------------------- */
 .hero {
   background-color: #2f303a;
@@ -212,13 +196,11 @@ h6 {
 .hero-bt:focus {
   background-color: #188ce8;
 }
-
 /* -------------Benefits---------------- */
 .benefits {
   padding-top: 68px;
   padding-bottom: 94px;
 }
-
 .bts-header {
   font-weight: var(--font-weight);
   font-size: 14px;
@@ -237,7 +219,6 @@ h6 {
   margin: 0px;
   max-width: 270px;
 }
-
 .benefits-item-icon {
   display: flex;
   justify-content: center;
@@ -247,7 +228,6 @@ h6 {
   width: 270px;
   height: 120px;
 }
-
 /* --------------About---------------- */
 .about-header {
   font-weight: var(--font-weight);
@@ -259,12 +239,10 @@ h6 {
   margin: 0 auto;
   margin-bottom: 50px;
 }
-
 /* --------------Our team------------- */
 .our-team {
   background-color: #f5f4fa;
 }
-
 .oteam-items {
   background-color: var(--accent-color);
   border-radius: 0px 0px 4px 4px;
@@ -288,7 +266,6 @@ h6 {
   color: var(--basetext-color);
   margin-bottom: 16px;
 }
-
 .oteam-text {
   padding: 30px 0px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -322,7 +299,6 @@ h6 {
 .otem-soc-link:focus .otem-soc-icon {
   fill: var(--accent-color);
 }
-
 /*--------------Customers--------------- */
 
 .customers-header {
@@ -335,7 +311,6 @@ h6 {
   margin: 0 auto;
   margin-bottom: 50px;
 }
-
 .cust-link {
   display: flex;
   align-items: center;
@@ -345,7 +320,6 @@ h6 {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-
 .icon-сust {
   fill: #afb1b8;
 }
@@ -358,12 +332,10 @@ h6 {
 .cust-link:focus .icon-сust {
   fill: var(--header-color);
 }
-
 /* ----------Footer------------------*/
 .basement {
   background-color: #2f303a;
 }
-
 .ft {
   display: block;
   font-family: Raleway;
@@ -400,9 +372,7 @@ h6 {
   align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
-  
 }
-
 .ft-header {
   margin-bottom: 20px;
   font-size: 14px;
@@ -411,14 +381,12 @@ h6 {
   text-transform: uppercase;
   color: var(--accent-color);
 }
-
 .ft-soc {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-
 .ft-soc-link {
   display: flex;
   align-items: center;
@@ -432,20 +400,16 @@ h6 {
 .otem-soc-icon-ft {
   fill: #ffffff;
 }
-
 .ft-soc-link:hover,
 .ft-soc-link:focus {
   background-color: var(--header-color);
 }
-
 /* ----------------------PORTFOLIO---------------------------- */
-
 .oserv-but {
   margin-bottom: 50px;
   column-gap: 8px;
   justify-content: center;
 }
-
 .filter {
   font-family: inherit;
   font-weight: 500;
@@ -469,11 +433,9 @@ h6 {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 .oserv-list {
   flex-wrap: wrap;
 }
-
 .oserv-item {
   display: block;
   width: 370px;
@@ -483,8 +445,6 @@ h6 {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-
 .oserv-item-head {
   font-weight: var(--font-weight);
   font-size: 18px;
