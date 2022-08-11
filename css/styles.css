@@ -70,9 +70,9 @@ h6 {
   align-items: center;
 }
 .header {
-  padding: 10px 0px 15px;
-  border-bottom: 1px solid #ececec;
-}
+    border-bottom: 1px solid #ececec;
+    padding: 24px 0 25px;
+  }
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -82,8 +82,6 @@ h6 {
   color: var(--header-color);
   text-decoration: none;
   letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 25px;
   margin-right: 93px;
 }
 .logo-header {
@@ -94,6 +92,25 @@ h6 {
 }
 .nav-list-item.current {
   color: var(--header-color);
+}
+.current {
+  position: relative;
+}
+.current::after {
+  content: "";
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 4px;
+  background: var(--header-color);
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  top: 47px;
+  }
+.nav-list-item {
+  padding-left: 2px;
+  padding-right: 2px;
 }
 .nav-list-item,
 .header-tel,
@@ -198,7 +215,7 @@ h6 {
 }
 /* -------------Benefits---------------- */
 .benefits {
-  padding-top: 68px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .bts-header {
@@ -334,6 +351,8 @@ h6 {
 }
 /* ----------Footer------------------*/
 .basement {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 .ft {
@@ -370,9 +389,7 @@ h6 {
 .footer {
   display: flex;
   align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+  }
 .ft-header {
   margin-bottom: 20px;
   font-size: 14px;
@@ -462,3 +479,26 @@ h6 {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
+/* -----------Modal window------------ */
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.modal {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 528px;
+height: 581px;
+background-color: var(--accent-color);
+} 
