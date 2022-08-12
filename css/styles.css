@@ -112,6 +112,7 @@ h6 {
 .nav-list-item {
    padding-left: 2px;
    padding-right: 2px;
+   transition: color var(--trans);
 }
 .nav-list-item,
 .header-tel,
@@ -131,6 +132,7 @@ h6 {
    display: flex;
    align-items: center;
    color: var(--basetext-color);
+   transition: color var(--trans);
 }
 .header-tel:hover,
 .header-tel:focus {
@@ -154,6 +156,7 @@ h6 {
 .contacts-icon {
    margin-right: 10px;
    fill: var(--basetext-color);
+   transition: fill var(--trans);
 }
 .contacts-icon:hover,
 .contacts-icon:focus {
@@ -208,6 +211,7 @@ h6 {
    max-width: 100%;
    margin: 0 auto;
    border: none;
+   transition: background-color var(--trans), color var(--trans);
 }
 .hero-bt:hover,
 .hero-bt:focus {
@@ -331,9 +335,11 @@ h6 {
    width: 100%;
    height: 100%;
    border-radius: 50%;
+   transition: background-color var(--trans);
 }
 .otem-soc-icon {
    fill: #afb1b8;
+   transition: fill var(--trans);
 }
 .otem-soc-link:hover,
 .otem-soc-link:focus {
@@ -363,9 +369,11 @@ h6 {
    height: 92px;
    border: 1px solid #afb1b8;
    border-radius: 4px;
+   transition: border var(--trans);
 }
 .icon-сust {
    fill: #afb1b8;
+   transition: fill var(--trans);
 }
 .cust-link:hover,
 .cust-link:focus {
@@ -440,6 +448,7 @@ h6 {
    border-radius: 50%;
    background-color: rgba(255, 255, 255, 0.1);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   transition: background-color var(--trans);
 }
 .otem-soc-icon-ft {
    fill: #ffffff;
@@ -469,6 +478,7 @@ h6 {
    min-width: 73px;
    text-align: center;
    border: 0;
+   transition: background-color var(--trans), color var(--trans), box-shadow var(--trans);
 }
 .filter:hover,
 .filter:focus {
@@ -483,14 +493,15 @@ h6 {
 .oserv-item {
    display: block;
    width: 370px;
+   transition: box-shadow var(--trans);
 }
 .oserv-over {
    position: relative;
    overflow: hidden;
-   }
+}
 .oserv-over:hover .over-text {
- transform: translateY(0); 
- transition: transform var(--trans) 
+   transform: translateY(0);
+   transition: transform var(--trans);
 }
 .over-text {
    position: absolute;
@@ -512,7 +523,7 @@ h6 {
 .oserv-item:focus {
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+   }
 .oserv-item-head {
    font-weight: var(--font-weight);
    font-size: 18px;
@@ -538,27 +549,32 @@ h6 {
    left: 0px;
    top: 0px;
    background: rgba(0, 0, 0, 0.2);
+   transition: opacity var(--trans), visibility var(--trans);
 }
 .backdrop.is-hidden {
    opacity: 0;
    pointer-events: none;
    visibility: hidden;
-}
+ }
 .modal {
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%);
    width: 528px;
    height: 581px;
    background-color: var(--accent-color);
-}
+   transform: translate(-50%, -50%) scale(1);
+   transition: transform var(--trans);
+   }
 .bt-modal {
    position: absolute;
    top: 8px;
    right: 8px;
    border: none;
    background: var(--accent-color);
+}
+.backdrop.is-hidden .modal {
+transform: translate(-50%, -50%) scale(0);
 }
 .bt-modal-link {
    display: flex;
